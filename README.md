@@ -48,18 +48,6 @@ Afterwards you can keep chatting ("which one is better for a quiet date?"), and 
 | Hosting | [Streamlit Community Cloud](https://share.streamlit.io) | None |
 | *Optional, paid* | [Claude API](https://platform.claude.com) (Claude Sonnet 5.5 / Haiku 5.5) as the main AI, pay-as-you-go | `ANTHROPIC_API_KEY`; not included in Claude Pro |
 
-## Run it on your computer
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate              # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env                   # then paste your free keys into .env
-python check.py                        # optional: tests each free service on its own
-python -m streamlit run app.py
-```
-
-
 
 ## How it works
 
