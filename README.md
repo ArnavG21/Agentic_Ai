@@ -59,22 +59,7 @@ python check.py                        # optional: tests each free service on it
 python -m streamlit run app.py
 ```
 
-Keys live only in `.env` on your computer, or in **Secrets** on Streamlit Cloud, and are never shown in the app. `python check.py` (or **Check services** in the sidebar) tests each free service and prints each result as it goes.
 
-There's also a terminal version: `python cli.py "vegetarian dinner in Barcelona, under 35 euros"`.
-
-Run the tests with `pytest -q`. They need no keys and no internet, because every outside service is faked.
-
-## Put it online (free)
-
-1. Upload this repository to GitHub. **Don't upload `.env` or `.venv`.** The web uploader ignores `.gitignore`.
-2. At **https://share.streamlit.io**, click **Create app**, choose this repository, and set the main file to `app.py`.
-3. Under **Advanced settings → Secrets**, add:
-   ```toml
-   GEMINI_API_KEY = "your-gemini-key"
-   GROQ_API_KEY = "your-groq-key"
-   ```
-4. Click **Deploy**.
 
 ## How it works
 
